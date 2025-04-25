@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root {
+  --background: white;
+  --secondaryBackground: #DEEFF5;
+  --foreground: #171717;
+  --primaryColor: #1e3a8a;
+  --primaryHoverColor: #172554;
+  --navHoverColor: #4c1d95;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}

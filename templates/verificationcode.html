@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify Your Account</title>
+    <style>
+        .cardTemplate {
+            margin-left: 120px;
+            margin-right: 120px;
+        }
+        .emailIc {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .para {
+            text-align: center;
+        }
+        .codeBox {
+            margin: auto;
+            width: 200px;
+            border: 1px solid #1e3a8a;
+            padding: 10px;
+            text-align: center;
+            color: #1e3a8a;
+        }
+        .paraHighLight {
+            text-align: center;
+            color: gray;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <img src="data:image/png;base64,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" alt="circled-envelope" class="emailIc">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p class="para">Verify Your Account</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <hr/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p class="para">In order to start using your Softura account, you need to verify your account with this verification code.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="codeBox">{{CODE}}</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p class="paraHighLight">If you did not sign up for this account you can ignore this email</p>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
